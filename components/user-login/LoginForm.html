@@ -5,26 +5,41 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="../../css/registration/Login_to_profile.css">
-
-    <title>Войдите в профиль</title>
+    <link rel="stylesheet" href="user-login.css">
+    <title>Регистрация</title>
 </head>
 <body>
-<form action="">
-    <div class="formObject">
-        <div class="formImage">
-            <img src="../../assets/pictures/svg/Cancel.svg" width="14" height="14" alt="Отменить">
+<form action="/register" method="POST">
+    <div class="auth-form-object">
+        <div class="auth-form-text">
+            <h1>Регистрация</h1>
         </div>
-        <div class="formText">
-            <h1>Войдите в профиль</h1>
-            <p>Добавлять рецепты могут только зарегистрированные <br>пользователи.</p>
+        <div class="auth-form-inputs">
+            <label for="username"></label>
+            <input type="text" id="username" name="fullName" placeholder="Введите своё имя">
+            <br><br>
+
+            <label for="login"></label>
+            <input type="text" id="login" name="username" placeholder="Введите логин">
+            <br><br>
+
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль">
+            <br><br>
+
+            <label for="confirm_password"></label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Повторите пароль">
+            <br><br>
         </div>
-        <div class="formButton">
-            <button type="button">Войти</button>
-            <button type="button">Регистрация</button>
+        <div class="auth-form-Btn">
+            <button type="submit">Зарегистрироваться</button>
+            <button type="reset">Отмена</button>
+        </div>
+        <div class="login-prompt">
+            <a href="#"><p>У меня уже есть аккаунт</p></a>
         </div>
     </div>
 </form>
+<script src="../../javascript/ValidatePassword.js"></script>
 </body>
 </html>
