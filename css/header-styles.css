@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #FEFEFB;
+}
+
+/*Данные стили применяются к классам '.navigation-priority-left',
+'.navigation-logo' и '.navigation-icons' для установки относительного
+позиционирования и значения z-index. Это сделано для того, чтобы
+управлять наложением элементов навигации на левой стороне. Высокий
+приоритет z-index позволяет избежать проблем с отображением фонового
+изображения, которые возникали при применении z-index к родительскому
+контейнеру.*/
+
+.navigation-priority-left,
+.navigation-logo,
+.navigation-icons {
+    position: relative;
+    z-index: 1;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 120px 0 120px;
+}
+
+.navigation a {
+    color: #9196A1;
+}
+
+.navigation-links ul {
+    display: flex;
+    position: relative;
+    right: 265px;
+}
+
+.navigation-links li {
+    margin-right: 40px;
+}
+
+.navigation-links a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.navigation-links a:hover {
+    color: #3A3C41;
+    font-weight: 600;
+}
+
+.navigation-icons li {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-icons a {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 14px;
+}
+
+.navigation-icons img {
+    width: 38px;
+    height: 38px;
+}
+
+.navigation-icons a:hover {
+    color: #FDB100;
+}

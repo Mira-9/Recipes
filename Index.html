@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/header-styles.css">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+
+    <title>Recipes</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="navigation">
+            <div class="navigation-logo">
+                <img src="assets/pictures/svg/Logo.svg" alt="Логотип сайта">
+            </div>
+            <!--
+                    Класс 'navigation-priority-left' предназначен для установки
+                    приоритета z-index для элементов навигации, расположенных
+                    на левой стороне. Это необходимо, поскольку при использовании
+                    z-index на родительском контейнере возникали проблемы с
+                    корректным отображением фонового изображения.
+            -->
+            <div class="navigation-priority-left">
+                <div class="navigation-links">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Рецепты</a></li>
+                        <li><a href="#">Избранное</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation-icons">
+                <ul>
+                    <li>
+                        <img src="assets/pictures/svg/Login.svg" alt="Иконка войти">
+                        <a href="#">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="initial-form-container">
+        <div class="initial-form-pictures">
+            <img src="assets/pictures/png/Background-image.png" alt="Фоновая картинка">
+        </div>
+        <div class="initial-form-section">
+            <div class="initial-form-text">
+                <h1>Готовь и делись <br>рецептами</h1>
+                <p>
+                    Никаких кулинарных книг и блокнотов!
+                    Храни все <br> любимые рецепты в одном месте.
+                </p>
+            </div>
+            <div class="initial-form-Btn">
+                <button class="add-recipe-Btn" type="button"> + Добавить рецепт</button>
+                <button class="login-Btn" type="button">Войти</button>
+            </div>
+        </div>
+    </div>
+    <div class="cooking-tags-object">
+        <div class="cooking-tags-title">
+            <h1>Умная сортировка по тегам</h1>
+            <p>
+                Добавляй рецепты и указывай наиболее популярные теги.
+                Это позволит <br> быстро находить любые категории.
+            </p>
+        </div>
+        <div class="cooking-tags-cards">
+            <section>
+                <img src="assets/pictures/svg/Simple-dish.svg" alt="Простые блюда">
+                <h2>Простые блюда</h2>
+                <p>
+                    Время приготовления <br>таких блюд не более 1 <br>часа
+                </p>
+            </section>
+            <section>
+                <img src="assets/pictures/svg/Children.svg" alt="Детские блюда">
+                <h2>Детское</h2>
+                <p>
+                    Самые полезные блюда которые можно детям любого возраста
+                </p>
+            </section>
+            <section>
+                <img src="assets/pictures/svg/Kitchen.svg" alt="Блюда от шеф-повара">
+                <h2>От шеф-поваров</h2>
+                <p>
+                    Требуют умения, <br>времени и терпения, <br>зато как в ресторане
+                </p>
+            </section>
+            <section>
+                <img src="assets/pictures/svg/Holiday.svg" alt="Простые блюда">
+                <h2>Простые блюда</h2>
+                <p>
+                    Чем удивить гостей, <br>чтобы все были сыты за праздничным столом
+                </p>
+            </section>
+        </div>
+    </div>
+    <div class="pumpkin-soup-object">
+        <div class="pumpkin-soup-picture">
+            <img src="assets/pictures/png/Pumpkin-soup.jpeg" alt="Тыквенный суп">
+        </div>
+        <div class="pumpkin-soup-text">
+            <h1>Тыквенный Супчик <br>На Кокосовом Молоке</h1>
+            <p>
+                Если у вас осталась тыква, и вы не знаете что с ней <br>сделать, то это решение для вас!
+                Ароматный,<br> согревающий суп-пюре на кокосовом молоке.
+                Можно <br>даже в Пост!
+            </p>
+        </div>
+        <div class="timer-heart-icons">
+            <img src="assets/pictures/svg/Heart.svg" alt="Лайки">
+            <p>356</p>
+
+            <img src="assets/pictures/svg/Timer.svg" alt="Время">
+            <p>35 минут</p>
+        </div>
+    </div>
+    <div class="search-recipes-object">
+        <div class="search-recipes-text">
+            <h1>Поиск рецептов</h1>
+            <p>Введите примерное название блюда, а мы по тегам найдем его</p>
+        </div>
+        <div class="search-input-field">
+            <div class="input-button-group">
+                <label for="recipe-search"></label>
+                <input type="search" id="recipe-search" name="query" placeholder="Название блюда....">
+                <button type="submit">Поиск</button>
+            </div>
+            <div class="hot-words">
+                <p>Мясо</p>
+                <p>Деликатесы</p>
+                <p>Пироги</p>
+                <p>Рыба</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <nav>
+        <div class="footer">
+            <img src="assets/pictures/svg/Logo.svg" alt="Логотип сайта">
+            <p>© Recipes 2021</p>
+        </div>
+    </nav>
+</footer>
+</body>
+</html>

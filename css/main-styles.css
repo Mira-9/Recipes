@@ -1,0 +1,291 @@
+/*Стилизация области Готовь и делись рецептами*/
+
+.initial-form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 133px 0 113px 120px;
+    height: 560px;
+}
+
+/*Стилизация секции Фоновая картинка*/
+
+.initial-form-pictures {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -240px;
+}
+
+.initial-form-pictures img {
+    width: 602px;
+    height: 800px;
+    border-radius: 0 0 0 200px;
+}
+
+/*Стилизация секции Заголовок + текст + кнопки*/
+
+.initial-form-section {
+    position: absolute;
+}
+
+.initial-form-text {
+    margin-bottom: 42px;
+}
+
+.initial-form-text h1 {
+    color: #25292D;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.initial-form-text p {
+    color: #4A525A;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*Стилизация секции кнопки ( + Добавить рецепт + Войти) */
+
+.initial-form-Btn {
+    width: 539px;
+    height: 70px;
+}
+
+.add-recipe-Btn, .login-Btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FDB100;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #FDB100;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.add-recipe-Btn {
+    width: 278px;
+    height: 60px;
+}
+
+.login-Btn {
+    width: 216px;
+    height: 60px;
+}
+
+.initial-form-Btn button:hover {
+    background-color: #FDB100;
+    color: #FEFEFB;
+}
+
+/*Стилизация области Умная сортировка по тегам*/
+
+.cooking-tags-object {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 42px 120px;
+}
+
+
+/*Стилизация секции Умная сортировка по тегам (заголовок + текст)*/
+
+.cooking-tags-title {
+    /************/
+}
+
+.cooking-tags-title h1 {
+    color: #25292D;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.cooking-tags-title p {
+    color: #4A525A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* Стилизация секции с карточками блюда */
+
+.cooking-tags-cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 42px;
+}
+
+.cooking-tags-cards section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 278px;
+    height: 271px;
+    border-radius: 24px;
+    padding: 24px 24px 32px 24px;
+    background-color: #F8F8F5;
+    margin-right: 29px;
+}
+
+.cooking-tags-cards img {
+    border: solid 12px #FFEFCC;
+    border-radius: 12px;
+    width: 22px;
+    height: 24px;
+    margin-bottom: 24px;
+}
+
+.cooking-tags-cards h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 16px;
+    color: #25292D;
+    background-color: #F8F8F5;
+}
+
+.cooking-tags-cards p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #4A525A;
+    background-color: #F8F8F5;
+}
+
+/*Стилизация области Тыквенный суп*/
+
+.pumpkin-soup-object {
+    display: flex;
+    flex-direction: row;
+    margin: 157px 0 150px 120px;
+}
+
+.pumpkin-soup-picture img {
+    border-radius: 75px 0;
+    width: 543px;
+    height: 543px;
+}
+
+/* Стилизация секции (Тыквенный Супчик
+На Кокосовом Молоке) заголовок + текст */
+
+.pumpkin-soup-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 62px;
+}
+
+.pumpkin-soup-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 16px;
+}
+
+.pumpkin-soup-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* Стилизация секции иконок сердце + таймер */
+
+.timer-heart-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    right: 170px;
+    height: 20px;
+}
+
+.timer-heart-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.timer-heart-icons p {
+    margin-right: 25px;
+}
+
+/*Стилизация области Поиск рецептов*/
+
+.search-recipes-object {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 278px;
+}
+
+/* Стилизация секции Поиск рецептов (заголовок + текст) */
+
+.search-recipes-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.search-recipes-text h1 {
+    font-size: 41px;
+    font-weight: 700;
+    color: #25292D;
+    margin-bottom: 16px;
+}
+
+.search-recipes-text p {
+    font-family: "Mulish", sans-serif;
+    color: #4A525A;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Стилизация секции поискового поля (Поиск рецептов)*/
+
+.search-input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-button-group input {
+    width: 716px;
+    height: 73px;
+    border-radius: 16px;
+    margin-right: 15px;
+    box-shadow: 0 8px 42px 0 #22272F0A;
+}
+
+.input-button-group input:focus {
+    outline: none;
+    border: none;
+}
+
+.input-button-group button {
+    width: 152px;
+    height: 73px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 16px;
+    color: #ffffff;
+    background-color: #FDB100;
+    cursor: pointer;
+}
+
+/* Стилизация */
+
+.hot-words {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 24px;
+}
+
+.hot-words p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+    margin-left: 15px;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/registration/Registration.css">
+    <title>Регистрация</title>
+</head>
+<body>
+<form action="/register" method="POST">
+    <div class="formObjectRegistration">
+        <div class="formTextRegistration">
+            <h1>Регистрация</h1>
+        </div>
+        <div class="formInputRegistration">
+            <label for="username">Введите своё имя:</label>
+            <input type="text" id="username" name="fullName" placeholder="Введите своё имя">
+            <br><br>
+
+            <label for="login">Логин:</label>
+            <input type="text" id="login" name="username" placeholder="Введите логин">
+            <br><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль">
+            <br><br>
+
+            <label for="confirm_password">Повторите пароль:</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Повторите пароль">
+            <br><br>
+        </div>
+        <div class="formButtonRegistration">
+            <button type="submit">Зарегистрироваться</button>
+            <button type="reset">Отмена</button>
+        </div>
+        <div class="loginPrompt">
+            <a href="#"><p>У меня уже есть аккаунт</p></a>
+        </div>
+    </div>
+</form>
+
+<script src="../../javascript/Registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+footer {
+    background-color: #FBF9F4;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 37px 120px 37px 120px;
+}
+
+.footer img {
+    width: 132px;
+    height: 39px;
+}
+
+.footer p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4A525A;
+}
