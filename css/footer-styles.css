@@ -14,8 +14,7 @@ footer {
     height: 39px;
 }
 
-.footer p {
+.footer b {
     font-size: 20px;
-    font-weight: 500;
     color: #4A525A;
 }

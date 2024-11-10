@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="user-registration.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+
+    <title>Регистрация</title>
+</head>
+<body>
+<form>
+    <div class="registration-form-overlay" id="registrationFormOverlay" style="display: none;">
+        <div class="registration-form-container">
+            <div class="registration-form-object">
+                <div class="registration-form-cancel-Btn">
+                    <button class="close-button">
+                        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                                  fill="#9196A1" fill-opacity="0.4"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="registration-form-title">
+                    <h1>Регистрация</h1>
+                </div>
+                <div class="registration-form-inputs">
+                    <label for="username"></label>
+                    <input type="text" id="username" name="fullName" placeholder="Имя" autocomplete="off">
+                    <br><br>
+
+                    <label for="login"></label>
+                    <input type="text" id="login" name="username" placeholder="Логин" autocomplete="off">
+                    <br><br>
+
+                    <div class="registration-form-password-section">
+                        <div class="registration-form-password">
+                            <label for="password"></label>
+                            <input type="password" id="password" name="password" placeholder="Пароль"
+                                   autocomplete="off">
+                            <span>Минимум 8 символов</span>
+                            <br><br>
+                        </div>
+                        <div class="registration-form-confirm-password">
+                            <label for="confirm_password"></label>
+                            <input type="password" id="confirm_password" name="confirm_password"
+                                   placeholder="Повторите пароль" autocomplete="off">
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="registration-form-Btn">
+                    <button type="button">Зарегистрироваться</button>
+                    <button type="button" class="close-button">Отмена</button>
+                </div>
+                <div class="registration-prompt">
+                    <a href="#"><p>У меня уже есть аккаунт</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script src="../../javascript/ValidatePassword.js"></script>
+</body>
+</html>

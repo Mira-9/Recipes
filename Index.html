@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/footer-styles.css">
     <link rel="stylesheet" href="fonts/fonts.css">
 
+    <!--стили для модальных окон на index.html-->
+    <link rel="stylesheet" href="components/user-access/auth-form.css">
+    <link rel="stylesheet" href="components/user-login/user-login.css">
+    <link rel="stylesheet" href="components/user-registration/user-registration.css">
+
     <title>Recipes</title>
 </head>
 <body>
@@ -35,13 +40,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="navigation-icons">
-                <ul>
-                    <li>
-                        <img src="assets/pictures/svg/Login.svg" alt="Иконка войти">
-                        <a href="#">Войти</a>
-                    </li>
-                </ul>
+            <div class="navigation-priority-right">
+                <div class="navigation-login">
+                    <ul>
+                        <li>
+                            <span>
+                                <img src="assets/pictures/svg/Login.svg" alt="Иконка войти">
+                                <a id="openLoginModalWindowMain" href="#">Войти</a>
+                            </span>
+                            <div class="navigation-dropdown">
+                                <span><a id="openRegistrationModalWindow" href="#"><b>Зарегистрироваться</b></a></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -60,12 +72,12 @@
                 </p>
             </div>
             <div class="initial-form-Btn">
-                <button class="add-recipe-Btn" type="button"> + Добавить рецепт</button>
-                <button class="login-Btn" type="button">Войти</button>
+                <button class="add-recipe-Btn" id="openAuthModalWindow"> + Добавить рецепт</button>
+                <button class="login-Btn" id="openLoginModalWindow">Войти</button>
             </div>
         </div>
     </div>
-    <div class="cooking-tags-object">
+    <div class="cooking-tags-container">
         <div class="cooking-tags-title">
             <h1>Умная сортировка по тегам</h1>
             <p>
@@ -75,28 +87,36 @@
         </div>
         <div class="cooking-tags-cards">
             <section>
-                <img src="assets/pictures/svg/Simple-dish.svg" alt="Простые блюда">
+                <span>
+                    <img src="assets/pictures/svg/Simple-dish.svg" alt="Простые блюда">
+                </span>
                 <h2>Простые блюда</h2>
                 <p>
                     Время приготовления <br>таких блюд не более 1 <br>часа
                 </p>
             </section>
             <section>
-                <img src="assets/pictures/svg/Children.svg" alt="Детские блюда">
+                <span>
+                    <img src="assets/pictures/svg/Children.svg" alt="Детские блюда">
+                </span>
                 <h2>Детское</h2>
                 <p>
                     Самые полезные блюда которые можно детям любого возраста
                 </p>
             </section>
             <section>
-                <img src="assets/pictures/svg/Kitchen.svg" alt="Блюда от шеф-повара">
+                <span>
+                    <img src="assets/pictures/svg/Kitchen.svg" alt="Блюда от шеф-повара">
+                </span>
                 <h2>От шеф-поваров</h2>
                 <p>
                     Требуют умения, <br>времени и терпения, <br>зато как в ресторане
                 </p>
             </section>
             <section>
-                <img src="assets/pictures/svg/Holiday.svg" alt="Простые блюда">
+                <span>
+                    <img src="assets/pictures/svg/Holiday.svg" alt="Простые блюда">
+                </span>
                 <h2>Простые блюда</h2>
                 <p>
                     Чем удивить гостей, <br>чтобы все были сыты за праздничным столом
@@ -104,7 +124,7 @@
             </section>
         </div>
     </div>
-    <div class="pumpkin-soup-object">
+    <div class="pumpkin-soup-container">
         <div class="pumpkin-soup-picture">
             <img src="assets/pictures/png/Pumpkin-soup.jpeg" alt="Тыквенный суп">
         </div>
@@ -124,7 +144,7 @@
             <p>35 минут</p>
         </div>
     </div>
-    <div class="search-recipes-object">
+    <div class="search-recipes-container">
         <div class="search-recipes-text">
             <h1>Поиск рецептов</h1>
             <p>Введите примерное название блюда, а мы по тегам найдем его</p>
@@ -132,8 +152,8 @@
         <div class="search-input-field">
             <div class="input-button-group">
                 <label for="recipe-search"></label>
-                <input type="search" id="recipe-search" name="query" placeholder="Название блюда....">
-                <button type="submit">Поиск</button>
+                <input id="recipe-search" name="query" placeholder="Название блюда....">
+                <button>Поиск</button>
             </div>
             <div class="hot-words">
                 <p>Мясо</p>
@@ -143,14 +163,21 @@
             </div>
         </div>
     </div>
+    <!--модальные окна-->
+    <div id="authForm" style="display: none;"></div>
+    <div id="loginForm" style="display: none;"></div>
+    <div id="registrationForm" style="display: none;"></div>
 </main>
 <footer>
     <nav>
         <div class="footer">
             <img src="assets/pictures/svg/Logo.svg" alt="Логотип сайта">
-            <p>© Recipes 2021</p>
+            <!--Передача нынешнего года <span id="updateYearDate"></span>-->
+            <b>© Recipes <span id="updateYearDate"></span></b>
         </div>
     </nav>
 </footer>
+<script src="javascript/OpenModalWindowAll.js"></script>
+<script src="javascript/Script.js"></script>
 </body>
 </html>

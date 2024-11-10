@@ -1,50 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+/*Общие настройки*/
 * {
-    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
 }
 
-.login-form-object {
+svg {
+    background-color: transparent;
+}
+
+
+/*Работа с модальным окном AuthForm.html*/
+.auth-form-overlay { /*Фон модального окна*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.auth-form-container { /*Модальное окно*/
+    position: relative;
+    margin: auto;
+    top: 100px;
+    left: 0;
+    z-index: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 336px;
     width: 700px;
     border-radius: 24px;
-    border: 1px solid #6e6565;
 }
 
-.login-form-icon img {
+/*Стилизация кнопки Cancel (Закрыть)*/
+.auth-form-cancel-Btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.auth-form-cancel-Btn button {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 20%;
+}
+
+.auth-form-cancel-Btn svg {
     width: 14px;
     height: 14px;
     display: block;
-    margin-left: auto;
-    color: rgba(145, 150, 161, 0.4);
-    cursor: pointer;
-    position: relative;
-    top: 15px;
-    right: 30px;
+    stroke: rgba(145, 150, 161);
+    transform: translate(80%, 10%);
+    outline: none;
 }
 
-.login-text-Btn-group {
-    padding: 30px;
+.auth-form-cancel-Btn button:hover {
+    background-color: rgba(253, 177, 0, 0.6);
 }
 
-.login-form-text h1 {
+/*Стилизация секции с основным контентом, добавление внутренних отступов*/
+.auth-form-content-group {
+    margin: 0 0 30px 60px;
+}
+
+/*Стилизация секции с текстом*/
+.auth-form-text h1 {
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin: 5px 0 30px 0;
 }
 
-.login-form-text p {
+.auth-form-text p {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 40px;
 }
 
-.login-form-Btn button {
+/*Стилизация секции с кнопками (Стилизация кнопок)*/
+.auth-form-Btn button {
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -58,7 +100,7 @@
     margin-right: 24px;
 }
 
-.login-form-Btn button:hover {
+.auth-form-Btn button:hover {
     background-color: #FDB100;
     color: #FEFEFB;
 }

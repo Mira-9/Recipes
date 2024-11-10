@@ -1,0 +1,149 @@
+/*Общие настройки*/
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+}
+
+svg {
+    background-color: transparent;
+}
+
+
+/*Работа с модальным окном LoginForm.html*/
+.login-form-overlay { /*Фон модального окна*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.login-form-container { /*Модальное окно*/
+    position: relative;
+    margin: auto;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    height: 479px;
+    border-radius: 24px;
+}
+
+/*Стилизация кнопки Cancel (Закрыть)*/
+.login-form-cancel-Btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.login-form-cancel-Btn button {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 20%;
+}
+
+.login-form-cancel-Btn svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+    stroke: rgba(145, 150, 161);
+    transform: translate(80%, 10%);
+    outline: none;
+}
+
+.login-form-cancel-Btn button:hover {
+    background-color: rgba(253, 177, 0, 0.6);
+}
+
+/*Стилизация секции с основным контентом, добавление внутренних отступов*/
+.login-form-object {
+    margin: 0 0 30px 50px;
+}
+
+/*Стилизация секции с заголовком*/
+.login-form-title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 5px 0 20px 0;
+}
+
+/*Стилизация полей ввода*/
+.login-form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form-inputs input {
+    width: 580px;
+    height: 50px;
+    border-radius: 16px;
+    border: 1px solid rgba(145, 150, 161, 0.4);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-form-inputs input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-indent: 26px;
+}
+
+.login-form-inputs input:focus {
+    border: 1px solid rgba(145, 150, 161, 0.4);
+    outline: none;
+    text-indent: 26px;
+}
+
+/*Стилизация двух кнопок (Зарегистрироваться + Отмена)*/
+.login-form-Btn {
+    display: flex;
+}
+
+.login-form-Btn button {
+    width: 278px;
+    height: 60px;
+    margin-right: 22px;
+    background-color: #ffffff;
+    border: 1px solid #FDB100;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #FDB100;
+    cursor: pointer;
+}
+
+.login-form-Btn button:hover {
+    background-color: #FDB100;
+    color: #ffffff;
+}
+
+/*Стилизация ссылки под двумя кнопками (У меня уже есть аккаунт)*/
+.login-prompt {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    right: 35px;
+}
+
+.login-prompt a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #FDB100;
+    border-bottom: 2px dotted #FDB100;
+}
