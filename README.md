@@ -13,7 +13,3 @@
 - CSS
 - JavaScript
 - Figma
-
-## Лицензия
-
-Этот проект лицензируется под MIT License - смотрите файл [LICENSE](LICENSE.txt) для подробностей.
