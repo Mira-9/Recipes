@@ -1,0 +1,102 @@
+.navigation-priority-left,
+.navigation-logo,
+.navigation-priority-right {
+    position: relative;
+    z-index: 1;
+}
+
+/*Общие стили навигации сайта*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 120px 0 120px;
+
+}
+
+.navigation a {
+    color: #9196A1;
+}
+
+/*Стили для левой стороны навигации сайта*/
+.navigation-links ul {
+    display: flex;
+    position: relative;
+    right: 265px;
+}
+
+.navigation-links li {
+    margin-right: 40px;
+}
+
+.navigation-links a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
+
+.navigation-links a:hover {
+    color: #3A3C41;
+    font-weight: 600;
+}
+
+/*Стили для правой стороны навигации сайта*/
+.navigation-login li {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-login span,
+.navigation-login a,
+.navigation-login img,
+.navigation-dropdown,
+.navigation-dropdown b {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navigation-login span {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 12px;
+    border: 2px solid #FFEFCC;
+    transition: background-color 0.3s;
+}
+
+.navigation-login a {
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.navigation-login img {
+    width: 24px;
+    height: 24px;
+}
+
+.navigation-login span:hover {
+    background-color: #FFEFCC;
+}
+
+/*Выпадающее меню в секции - (Войти)*/
+.navigation-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+
+.navigation-dropdown b {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navigation-login:hover .navigation-dropdown {
+    display: block;
+}
+
+.navigation-dropdown span:hover {
+    background-color: #FFEFCC;
+}
